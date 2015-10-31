@@ -1,7 +1,13 @@
+//TODO: Change to use a MongoDB backend.
+//TODO: Look into mongolab.com
+//TODO: Follow this tutorial: http://www.smashingmagazine.com/2014/05/detailed-introduction-nodejs-mongodb/
+
 var http = require("http");
 var express = require('express');
 var app = express();
 var path = require("path");
+var mongojs = require("mongojs");
+var uri = ""; //TODO: Once MongoLab DB is set up change uri to equal the uri given.
 
 app.use(express.static('./app'));
 
@@ -28,3 +34,5 @@ app.get('/suggestions.html', function(req, res){
 app.listen(3000);
 
 console.log('Server running at http://127.0.0.1:3000/');
+
+//var db = mongojs.connect(uri, ["standard-collection"]); TODO: Uncomment when db is set up.
