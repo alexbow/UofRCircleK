@@ -1,0 +1,17 @@
+{
+	"name": "node-mysql",
+	"version": "0.0.1",
+	"dependencies": {
+		"express": "^4.10.6",
+		"mysql": "^2.5.4",
+	}
+}
+
+{
+	"name": "file-upload",
+	"version": "0.0.1",
+	"dependencies": {
+		"express": "^4.10.6",
+		"multer": "~0.1.6""
+	}
+}
